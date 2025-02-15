@@ -15,3 +15,33 @@ Anomaly detection in AI involves identifying patterns that deviate from the expe
 ### Predictive Analytics
 
 Predictive Analytics is another important workload that uses historical data to predict future trends. By applying machine learning models, businesses can forecast demand, anticipate equipment failures, and plan more effectively. This workload typically involves time-series forecasting, regression analysis, and pattern recognition.
+
+### Content Moderation
+
+It is used to find adult, hateful, offensive, violent, and other harmful contents and prevent them from being uploaded. We can set the severity level to allow some free speech.
+
+# Guiding Principles Of AI Development
+
+### Fairness
+
+AI Systems should treat everyone equally and avoid affecting similarly situated groups of people in different ways
+
+### Reliability and Safety
+
+It is critical that AI systems operate reliabily, safely, and consistently under normal circumstances and in unexpected conditions
+
+### Privacy and security
+
+AI systems should be secure and respect privacy. The machine learning models on which AI systems are based rely on large volumes of data, which may contain personal details that must be kept private. Even after the models are trained and the system is in production, privacy and security need to be considered. As the system uses new data to make predictions or take action, both the data and decisions made from the data may be subject to privacy or security concerns.
+
+### Inclusiveness
+
+AI systems should empower everyone. AI should bring benefits to all parts of society, regardless of physical ability, gender, sexual orientation, ethnicity, or other factors.
+
+### Transparency
+
+AI systems should be understandable. Users should be made fully aware of the purpose of the system, how it works, and what limitations may be expected.
+
+### Accountability
+
+People should be accountable for AI systems. Designers and developers of AI-based solutions should work within a framework of governance and organizational principles that ensure the solution meets ethical and legal standards that are clearly defined.
