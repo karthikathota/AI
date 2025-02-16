@@ -45,3 +45,18 @@ AI systems should be understandable. Users should be made fully aware of the pur
 ### Accountability
 
 People should be accountable for AI systems. Designers and developers of AI-based solutions should work within a framework of governance and organizational principles that ensure the solution meets ethical and legal standards that are clearly defined.
+
+# Common Machine Learning Types
+
+### Regression
+
+It is a type of supervised learning method. The ability to predict outcome variables give 1 or more inputs. In this type the result is numeric(price,amount,size).
+It is generally finding relations between variables.
+
+### Classification
+
+It is a type of supervised learning method. The goal is to predict a discrete label or category for a given input based on its features. The task is to map input data to one of several predefined classes.
+
+### Clustering
+
+This is a type of unsupervised learning methods. In this we donot have any kinds of labelled data. The model is trained to find underlying relations between the input items and group them into clusters based on these relations.
