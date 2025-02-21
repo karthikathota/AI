@@ -60,3 +60,26 @@ It is a type of supervised learning method. The goal is to predict a discrete la
 ### Clustering
 
 This is a type of unsupervised learning methods. In this we donot have any kinds of labelled data. The model is trained to find underlying relations between the input items and group them into clusters based on these relations.
+
+# Deep Learning
+
+Deep learning is a sub set of machine learning in which neural networks with layered structures are used for decision making. In these we mainly used large amounts of data. This is how an ML algorithm can perform complex tasks such as image recognition, speech processing etc. It does so by using a hierarchy of neural networks, each iteration getting more complex and understanding the problem at deeper level.
+
+# Core Machine Learning Concepts
+
+## Training The Model
+
+Generally we donot use all the data for training, but we split the data into 2 groups i.e training data and validation/test data.
+It is recommended to split the data randomly i.e all the key elements are equally distributed in both datasets.  
+After traning the ML algorithm on test data we must validate the testing using the test data and see how close/far are the outputs to the expected outputs. We can do this by using some mathematical calculations like Mean Square Methods in this we take the difference between the predicted output and actual output we determine the accuracy of the ML algorithm.
+
+# Azure Machine Learning
+
+Azure machine learning is a cloud based service that helps simplify some of the tasks and reduce the time it takes to prepare data, train the model
+and deploy a predictive service
+
+## Auto ML
+
+AutoML is a cloud-based service that automates the machine learning process, allowing users to build, train, and deploy models without coding expertise.
+It streamlines tasks like data preprocessing, model selection, hyperparameter tuning, and evaluation. AutoML automatically chooses the best algorithm, optimizes parameters, and generates performance metrics. It supports tasks such as classification, regression, and time series forecasting.
+AutoML enables users to quickly integrate machine learning models into applications, making it accessible for non-technical users while still offering customization for advanced users.
