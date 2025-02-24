@@ -83,3 +83,14 @@ and deploy a predictive service
 AutoML is a cloud-based service that automates the machine learning process, allowing users to build, train, and deploy models without coding expertise.
 It streamlines tasks like data preprocessing, model selection, hyperparameter tuning, and evaluation. AutoML automatically chooses the best algorithm, optimizes parameters, and generates performance metrics. It supports tasks such as classification, regression, and time series forecasting.
 AutoML enables users to quickly integrate machine learning models into applications, making it accessible for non-technical users while still offering customization for advanced users.
+
+## Azure ML Designer
+
+Azure Machine Learning Designer is a drag-and-drop interface within the Azure Machine Learning service that allows users to build, train, and deploy machine learning models without writing code. It provides a visual environment where users can create end-to-end machine learning pipelines by connecting various pre-built
+components like data inputs, data transformations, models, and evaluation metrics.
+
+# Computer Vision
+
+One of the primary applications of computer vision in Azure is image classification, where the system is fed images and classifies them into predefined categories. Another widely used application is object detection, which allows the identification and classification of multiple objects within an image.
+Semantic segmentation is another important application of computer vision, where the system classifies each pixel in an image into a specific category or label. Unlike object detection, which focuses on identifying and classifying objects, semantic segmentation provides a more detailed understanding by segmenting the entire image into regions that correspond to different classes, such as roads, buildings, or trees. This technique is especially useful in tasks like autonomous driving and medical image analysis.
+Optical Character Recognition (OCR) is a key application of computer vision that enables the extraction of text from images or scanned documents. OCR analyzes the structure of the document, detects characters, and converts them into machine-readable text.
