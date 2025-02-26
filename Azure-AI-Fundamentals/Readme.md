@@ -137,3 +137,17 @@ The Text Analytics service in Azure Cognitive Services provides a range of NLP c
 ### Language Understanding (LUIS)
 
 Language Understanding (LUIS) helps developers create natural language models that understand user intents and entities in conversational apps (e.g., chatbots, virtual assistants). LUIS is great for building custom language models.
+
+### Translator
+
+Azure's Translator service is an NLP solution that supports real-time text translation between over 70 languages.  
+Text Translation: Translate text between various languages.  
+Transliteration: Convert text from one writing system to another (e.g., from Latin script to Cyrillic).  
+Language Detection: Automatically detects the language of the input text.
+
+### Speech-to-Text and Text-to-Speech
+
+These services convert spoken language into text and vice versa. They are often used for voice-based applications, transcription, and real-time speech translation.  
+Speech-to-Text: Converts audio files or real-time spoken language into text.  
+Text-to-Speech: Converts text into spoken language using natural-sounding voices.  
+Speaker Recognition: Identifies different speakers in an audio stream.
