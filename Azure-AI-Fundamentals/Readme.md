@@ -112,11 +112,11 @@ The main purpose of this is to identify and extract the important infomartion fr
 
 ### Entity Recognition
 
-Identifies entities of a document that can be categorized into types and sub types.
-Eg:- "My car and bike are in the garage earlier today". The entites that maybe found are  
-Car, Bike:- Objects  
-Garage:- Location  
-Earlier Today:- Date
+Identifies entities of a document that can be categorized into types and sub types.  
+Eg:- "My car and bike are in the garage earlier today". The entites that maybe found are:-  
+Car, Bike - Objects  
+Garage - Location  
+Earlier Today - Date
 
 ### Sentiment Analysis
 
