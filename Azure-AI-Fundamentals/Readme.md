@@ -99,3 +99,25 @@ Optical Character Recognition (OCR) is a key application of computer vision that
 
 Azure AI Video Indexer is a cloud-based service provided by Microsoft Azure that uses artificial intelligence (AI) and machine learning (ML) to extract rich, actionable insights from video and audio content.
 ![Azure AI Video Indexer](./img/model-chart.png)
+
+# Natural Language Processing
+
+Natural Language Processing (NLP) is a branch of artificial intelligence that focuses on enabling computers to understand, interpret, and generate human language. It involves tasks like speech recognition, text analysis, sentiment analysis, machine translation, and chatbot creation, helping bridge communication between humans and machines.
+
+## Common NLP Workloads
+
+### Key Phrase Extraction
+
+The main purpose of this is to identify and extract the important infomartion from documents. This is generally used to decide the context of the text provided.
+
+### Entity Recognition
+
+Identifies entities of a document that can be categorized into types and sub types.
+Eg:- "My car and bike are in the garage earlier today". The entites that maybe found are  
+Car, Bike:- Objects  
+Garage:- Location  
+Earlier Today:- Date
+
+### Sentiment Analysis
+
+This is a prebuilt ML model used to identify the overall sentiment of the provided text. It provides a score between 0 to 1, generally higher the score the more positve the sentiment.
