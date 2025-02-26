@@ -121,3 +121,19 @@ Earlier Today - Date
 ### Sentiment Analysis
 
 This is a prebuilt ML model used to identify the overall sentiment of the provided text. It provides a score between 0 to 1, generally higher the score the more positve the sentiment.
+
+## NLP in Azure
+
+Azure provides several tools and services for Natural Language Processing (NLP), offering a wide range of capabilities for text analysis, language understanding, sentiment analysis, translation, and more.
+
+### Text Analytics
+
+The Text Analytics service in Azure Cognitive Services provides a range of NLP capabilities, including:  
+ Sentiment Analysis: Analyzes text to determine if the sentiment is positive, negative, or neutral. It can also assess the intensity of sentiment in the text.  
+ Key Phrase Extraction: Identifies important phrases in the text that represent the main topics or concepts.  
+ Language Detection: Automatically detects the language of the input text, useful when working with multilingual content.  
+ Named Entity Recognition (NER): Identifies entities in text, such as people, organizations, locations, dates, and more.
+
+### Language Understanding (LUIS)
+
+Language Understanding (LUIS) helps developers create natural language models that understand user intents and entities in conversational apps (e.g., chatbots, virtual assistants). LUIS is great for building custom language models.
