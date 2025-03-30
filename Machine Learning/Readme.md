@@ -1,3 +1,0 @@
-# Linear Regression Model
-
-To train a linear regression model, you need to define parameter values that can linearly seperate the data. To determine the best values for these pramaters, you can use a performance measure—either a utility function (measuring goodness) or a cost function (measuring error). Typically, a cost function evaluates the distance between the model's predictions and actual training data, and the goal is to minimize this distance. This is where the Linear Regression algorithm comes in: you feed it your training examples and it finds the parameters that make the linear model fit best to your data. This is nothing but training the model.
