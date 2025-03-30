@@ -1,5 +1,7 @@
 ### How to load a Data Set
 
+We can load a dataset with the help of read_csv function provided in the pandas library. Pandas is a Python library used for data analysis and manipulation, providing efficient data structures like DataFrames to handle structured data.
+
 ```
 import pandas as pd
 
