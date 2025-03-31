@@ -23,3 +23,17 @@ Then apply the changes
 source ~/.zshrc  # or source ~/.bashrc
 exec $SHELL
 ```
+
+### 2. Install a Python Version
+
+This project uses 3.13.2
+
+```
+pyenv install 3.13.2
+```
+
+Set it as local
+
+```
+pyenv local 3.13.2
+```
