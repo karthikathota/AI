@@ -37,3 +37,39 @@ Set it as local
 ```
 pyenv local 3.13.2
 ```
+
+### 3. Create and Activate a Virtual Environment
+
+Create a virtual environment named project1env
+
+```
+pyenv virtualenv 3.13.2 project1env
+```
+
+```
+pyenv activate project1env
+```
+
+### 4. Install Required Packages
+
+```
+pip install -U jupyter matplotlib numpy pandas scipy scikit-learn
+```
+
+### 5. Configure Jupyter Notebook to Use the Virtual Environment
+
+```
+pip install jupyter
+```
+
+Add the virtual environment as a Jupyter kernel:
+
+```
+python -m ipykernel install --user --name=project1env --display-name "Python (project1env)"
+```
+
+Now, run the jupyter notebook
+
+```
+jupyter notebook
+```
