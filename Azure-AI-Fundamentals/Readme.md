@@ -48,16 +48,50 @@ People should be accountable for AI systems. Designers and developers of AI-base
 
 # Common Machine Learning Types
 
-### Regression
+## Regression
 
 It is a type of supervised learning method. The ability to predict outcome variables give 1 or more inputs. In this type the result is numeric(price,amount,size).
 It is generally finding relations between variables.
 
-### Classification
+## Classification
 
 It is a type of supervised learning method. The goal is to predict a discrete label or category for a given input based on its features. The task is to map input data to one of several predefined classes.
 
-### Clustering
+### Binary Classification
+
+Binary classification algorithms are used to train a model that predicts one of two possible labels for a single class. Essentially, predicting true or false. In most real scenarios, the data observations used to train and validate the model consist of multiple feature (x) values and a y value that is either 1 or 0.
+
+#### Performance Measure
+
+The first step in calculating evaluation metrics for a binary classification model is usually to create a matrix of the number of correct and incorrect predictions for each possible class label
+![Confusion Matrix](./img/cm.png)
+ŷ=0 and y=0: True negatives (Model correctly predicts negative when actual is negative.)
+ŷ=1 and y=0: False positives (Model incorrectly predicts positive when actual is negative.)
+ŷ=0 and y=1: False negatives (Model incorrectly predicts negative when actual is positive.)
+ŷ=1 and y=1: True positives (Model incorrectly predicts negative when actual is positive.)
+
+##### Accuracy
+
+The simplest metric you can calculate from the confusion matrix is accuracy - the proportion of predictions that the model got right. Accuracy is calculated as:
+
+(TN+TP) ÷ (TN+FN+FP+TP)
+
+##### Recall
+
+Recall is a metric that measures the proportion of positive cases that the model identified correctly. In other words, compared to the number of patients who have diabetes, how many did the model predict to have diabetes?
+
+The formula for recall is:
+
+TP ÷ (TP+FN)
+
+##### Precision
+
+Precision is a similar metric to recall, but measures the proportion of predicted positive cases where the true label is actually positive. In other words, what proportion of the patients predicted by the model to have diabetes actually have diabetes?
+The formula for precision is:
+
+TP ÷ (TP+FP)
+
+## Clustering
 
 This is a type of unsupervised learning methods. In this we donot have any kinds of labelled data. The model is trained to find underlying relations between the input items and group them into clusters based on these relations.
 
