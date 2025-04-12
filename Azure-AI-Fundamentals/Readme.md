@@ -131,6 +131,12 @@ To a computer, an image is an array of numeric pixel values.The ability to use f
 One of the most common machine learning model architectures for computer vision is a convolutional neural network (CNN), a type of deep learning architecture. CNNs use filters to extract numeric feature maps from images, and then feed the feature values into a deep learning model to generate a label prediction.
 During the training process for a CNN, filter kernels(Filter kernels are small, trainable matrices that slide over the input image or over the output of the previous layer during the convolution operationEach kernel extracts a specific kind of feature from the input, such as edges, corners, textures, or more abstract patterns deeper in the network) are initially defined using randomly generated weight values. Then, as the training process progresses, the models predictions are evaluated against known label values, and the filter weights are adjusted to improve accuracy.
 
+### Multi-modal models
+
+The success of transformers as a way to build language models has led AI researchers to consider whether the same approach would be effective for image data. The result is the development of multi-modal models, in which the model is trained using a large volume of captioned images, with no fixed labels. An image encoder extracts features from images based on pixel values and combines them with text embeddings created by a language encoder. The overall model encapsulates relationships between natural language token embeddings and image features
+![Multi-modal models](./img/3.png)  
+The Microsoft Florence model is just such a model. Trained with huge volumes of captioned images from the Internet, it includes both a language encoder and an image encoder. Florence is an example of a foundation model. In other words, a pre-trained general model on which you can build multiple adaptive models for specialist tasks
+
 # Azure Machine Learning
 
 Azure machine learning is a cloud based service that helps simplify some of the tasks and reduce the time it takes to prepare data, train the model
