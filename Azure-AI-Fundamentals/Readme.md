@@ -118,6 +118,19 @@ Generally we donot use all the data for training, but we split the data into 2 g
 It is recommended to split the data randomly i.e all the key elements are equally distributed in both datasets.  
 After traning the ML algorithm on test data we must validate the testing using the test data and see how close/far are the outputs to the expected outputs. We can do this by using some mathematical calculations like Mean Square Methods in this we take the difference between the predicted output and actual output we determine the accuracy of the ML algorithm.
 
+# Computer Vision
+
+Computer vision is one of the core areas of artificial intelligence (AI), and focuses on creating solutions that enable AI applications to "see" the world and make sense of it.
+
+## Image Processing
+
+To a computer, an image is an array of numeric pixel values.The ability to use filters to apply effects to images is useful in image processing tasks, such as you might perform with image editing software.
+
+### Convolutional neural networks (CNNs)
+
+One of the most common machine learning model architectures for computer vision is a convolutional neural network (CNN), a type of deep learning architecture. CNNs use filters to extract numeric feature maps from images, and then feed the feature values into a deep learning model to generate a label prediction.
+During the training process for a CNN, filter kernels(Filter kernels are small, trainable matrices that slide over the input image or over the output of the previous layer during the convolution operationEach kernel extracts a specific kind of feature from the input, such as edges, corners, textures, or more abstract patterns deeper in the network) are initially defined using randomly generated weight values. Then, as the training process progresses, the models predictions are evaluated against known label values, and the filter weights are adjusted to improve accuracy.
+
 # Azure Machine Learning
 
 Azure machine learning is a cloud based service that helps simplify some of the tasks and reduce the time it takes to prepare data, train the model
