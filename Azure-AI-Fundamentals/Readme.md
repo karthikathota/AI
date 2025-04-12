@@ -46,6 +46,13 @@ AI systems should be understandable. Users should be made fully aware of the pur
 
 People should be accountable for AI systems. Designers and developers of AI-based solutions should work within a framework of governance and organizational principles that ensure the solution meets ethical and legal standards that are clearly defined.
 
+# AI In Azure
+
+Azure AI services – a portfolio of AI services that can be incorporated into applications quickly and easily without specialist knowledge. Azure AI services is also the name for the multi-service resource created in the Azure portal that provides access to several different Azure AI services with a single key and endpoint. By endpoint we mean the location of a resource, such as an Azure AI service. We have 2 types of resources based on our needs and billing.
+
+1. Multi-service resource – the AI service resource created in the Azure portal that provides access to a bundle of AI services.
+2. Single-service resource – a resource created in the Azure portal that provides access to a single Azure AI service, such as Speech, Vision, Language, etc. Each Azure AI service has a unique key and endpoint.
+
 # Common Machine Learning Types
 
 ## Regression
@@ -64,11 +71,11 @@ Binary classification algorithms are used to train a model that predicts one of 
 #### Performance Measure
 
 The first step in calculating evaluation metrics for a binary classification model is usually to create a matrix of the number of correct and incorrect predictions for each possible class label
-![Confusion Matrix](./img/cm.png)
 ŷ=0 and y=0: True negatives (Model correctly predicts negative when actual is negative.)
 ŷ=1 and y=0: False positives (Model incorrectly predicts positive when actual is negative.)
 ŷ=0 and y=1: False negatives (Model incorrectly predicts negative when actual is positive.)
 ŷ=1 and y=1: True positives (Model incorrectly predicts negative when actual is positive.)
+![Confusion Matrix](./img/cm.png)
 
 ##### Accuracy
 
@@ -90,6 +97,10 @@ Precision is a similar metric to recall, but measures the proportion of predicte
 The formula for precision is:
 
 TP ÷ (TP+FP)
+
+### Multiclass classification
+
+Multiclass classification is used to predict to which of multiple possible classes an observation belongs. As a supervised machine learning technique, it follows the same iterative train, validate, and evaluate process as regression and binary classification in which a subset of the training data is held back to validate the trained model.
 
 ## Clustering
 
