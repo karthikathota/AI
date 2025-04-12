@@ -145,6 +145,15 @@ To use the Azure AI vision we need to create a resource for it in our subscripti
 1. Azure AI Vision: A specific resource for the Azure AI Vision service. Use this resource type if you don't intend to use any other Azure AI services, or if you want to track utilization and costs for your Azure AI Vision resource separately.
 2. Azure AI services: A general resource that includes Azure AI Vision along with many other Azure AI services; such as Azure AI Language, Azure AI Custom Vision, Azure AI Translator, and others. Use this resource type if you plan to use multiple AI services and want to simplify administration and development.
 
+### Understand facial analysis
+
+Face detection involves identifying regions of an image that contain a human face, typically by returning bounding box coordinates that form a rectangle around the face. With Face analysis, facial features can be used to train machine learning models to return other information, such as facial features such as nose, eyes, eyebrows, lips, and others. A further application of facial analysis is to train a machine learning model to identify known individuals from their facial features. This is known as facial recognition, and uses multiple images of an individual to train the model. This trains the model so that it can detect those individuals in new images on which it wasn't trained.  
+Microsoft Azure provides multiple Azure AI services that you can use to detect and analyze faces, including:
+
+1. Azure AI Vision, which offers face detection and some basic face analysis, such as returning the bounding box coordinates around an image.
+2. Azure AI Video Indexer, which you can use to detect and identify faces in a video.
+3. Azure AI Face, which offers pre-built algorithms that can detect, recognize, and analyze faces.
+
 # Azure Machine Learning
 
 Azure machine learning is a cloud based service that helps simplify some of the tasks and reduce the time it takes to prepare data, train the model
