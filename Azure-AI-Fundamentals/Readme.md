@@ -137,6 +137,14 @@ The success of transformers as a way to build language models has led AI researc
 ![Multi-modal models](./img/3.png)  
 The Microsoft Florence model is just such a model. Trained with huge volumes of captioned images from the Internet, it includes both a language encoder and an image encoder. Florence is an example of a foundation model. In other words, a pre-trained general model on which you can build multiple adaptive models for specialist tasks
 
+## Azure AI Vision
+
+Microsoft's Azure AI Vision service provides prebuilt and customizable computer vision models that are based on the Florence foundation model and provide various powerful capabilities. With Azure AI Vision, you can create sophisticated computer vision solutions quickly and easily; taking advantage of "off-the-shelf" functionality for many common computer vision scenarios, while retaining the ability to create custom models using your own images.  
+To use the Azure AI vision we need to create a resource for it in our subscription. We can use 2 types i.e
+
+1. Azure AI Vision: A specific resource for the Azure AI Vision service. Use this resource type if you don't intend to use any other Azure AI services, or if you want to track utilization and costs for your Azure AI Vision resource separately.
+2. Azure AI services: A general resource that includes Azure AI Vision along with many other Azure AI services; such as Azure AI Language, Azure AI Custom Vision, Azure AI Translator, and others. Use this resource type if you plan to use multiple AI services and want to simplify administration and development.
+
 # Azure Machine Learning
 
 Azure machine learning is a cloud based service that helps simplify some of the tasks and reduce the time it takes to prepare data, train the model
