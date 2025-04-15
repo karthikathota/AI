@@ -242,3 +242,19 @@ These services convert spoken language into text and vice versa. They are often 
 Speech-to-Text: Converts audio files or real-time spoken language into text.  
 Text-to-Speech: Converts text into spoken language using natural-sounding voices.  
 Speaker Recognition: Identifies different speakers in an audio stream.
+
+### Conversational language understanding
+
+To work with conversational language understanding (CLU), you need to take into account three core concepts: utterances, entities, and intents
+
+#### Utterances
+
+An utterance is an example of something a user might say, and which your application must interpret.
+
+#### Entity
+
+An entity is an item to which an utterance refers
+
+#### Intents
+
+An intent represents the purpose, or goal, expressed in a user's utterance.
