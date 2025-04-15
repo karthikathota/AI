@@ -185,6 +185,16 @@ Azure AI Video Indexer is a cloud-based service provided by Microsoft Azure that
 
 Natural Language Processing (NLP) is a branch of artificial intelligence that focuses on enabling computers to understand, interpret, and generate human language. It involves tasks like speech recognition, text analysis, sentiment analysis, machine translation, and chatbot creation, helping bridge communication between humans and machines.
 
+Azure AI Language is a part of the Azure AI services offerings that can perform advanced natural language processing over unstructured text. Azure AI Language's text analysis features include:
+
+1. Named entity recognition identifies people, places, events, and more. This feature can also be customized to extract custom categories.
+2. Entity linking identifies known entities together with a link to Wikipedia.
+3. Personal identifying information (PII) detection identifies personally sensitive information, including personal health information (PHI).
+4. Language detection identifies the language of the text and returns a language code such as "en" for English.
+5. Sentiment analysis and opinion mining identifies whether text is positive or negative.
+6. Summarization summarizes text by identifying the most important information.
+7. Key phrase extraction lists the main concepts from unstructured text.
+
 ## Common NLP Workloads
 
 ### Key Phrase Extraction
