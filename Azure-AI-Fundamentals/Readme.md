@@ -1,260 +1,219 @@
 # Common AI Workloads
 
-### Computer Vision
+## Computer Vision
 
-Computer Vision is a key AI workload, primarily concerned with enabling computers to interpret and analyze visual data. This can include tasks like image classification, where the system recognizes and categorizes objects within images. Object detection focuses on identifying and locating multiple objects in visual data, while face recognition enables the identification of individuals based on their facial features. OCR (Optical Character Recognition) allows for extracting text from images, and image analysis provides insights like detecting emotions or understanding the content of scenes.
+Computer vision is a key AI workload focused on enabling computers to interpret and analyze visual data. Key tasks include:
 
-### Natrual Language Processing
+- **Image Classification**: Recognizes and categorizes objects within images.
+- **Object Detection**: Identifies and locates multiple objects in visual data.
+- **Face Recognition**: Identifies individuals based on facial features.
+- **OCR (Optical Character Recognition)**: Extracts text from images.
+- **Image Analysis**: Provides insights such as emotion detection or scene understanding.
 
-Natural Language Processing (NLP) focuses on enabling machines to understand and process human language. In text classification, the goal is to categorize text into specific categories, which could be used for sentiment analysis, topic modeling, or spam detection. NLP also includes language translation, helping systems automatically translate text from one language to another. Speech recognition converts spoken language into text, and text-to-speech (TTS) synthesizes natural-sounding speech from text input, enabling more interactive and accessible systems.
+## Natural Language Processing (NLP)
 
-### Anamoly Detection
+NLP enables machines to understand and process human language. Common NLP tasks include:
 
-Anomaly detection in AI involves identifying patterns that deviate from the expected, often applied to areas like fraud detection, cybersecurity, and health monitoring. This workload relies on identifying outliers in datasets and flagging them for further analysis.
+- **Text Classification**: Categorizes text into specific categories (e.g., sentiment analysis, spam detection).
+- **Language Translation**: Automatically translates text from one language to another.
+- **Speech Recognition**: Converts spoken language into text.
+- **Text-to-Speech (TTS)**: Synthesizes natural-sounding speech from text input.
 
-### Predictive Analytics
+## Anomaly Detection
 
-Predictive Analytics is another important workload that uses historical data to predict future trends. By applying machine learning models, businesses can forecast demand, anticipate equipment failures, and plan more effectively. This workload typically involves time-series forecasting, regression analysis, and pattern recognition.
+Anomaly detection identifies patterns that deviate from expected behavior. It is widely used in:
 
-### Content Moderation
+- Fraud detection
+- Cybersecurity
+- Health monitoring
 
-It is used to find adult, hateful, offensive, violent, and other harmful contents and prevent them from being uploaded. We can set the severity level to allow some free speech.
+## Predictive Analytics
 
-# Guiding Principles Of AI Development
+Predictive analytics uses historical data to forecast future trends using:
 
-### Fairness
+- Time-series forecasting
+- Regression analysis
+- Pattern recognition
 
-AI Systems should treat everyone equally and avoid affecting similarly situated groups of people in different ways
+## Content Moderation
 
-### Reliability and Safety
+Used to detect and prevent the upload of harmful content (e.g., adult, violent, hateful). Customizable severity levels support balance with free speech.
 
-It is critical that AI systems operate reliabily, safely, and consistently under normal circumstances and in unexpected conditions
+---
 
-### Privacy and security
+# Guiding Principles of AI Development
 
-AI systems should be secure and respect privacy. The machine learning models on which AI systems are based rely on large volumes of data, which may contain personal details that must be kept private. Even after the models are trained and the system is in production, privacy and security need to be considered. As the system uses new data to make predictions or take action, both the data and decisions made from the data may be subject to privacy or security concerns.
+## Fairness
 
-### Inclusiveness
+AI systems should treat everyone equally and avoid disparate impacts.
 
-AI systems should empower everyone. AI should bring benefits to all parts of society, regardless of physical ability, gender, sexual orientation, ethnicity, or other factors.
+## Reliability and Safety
 
-### Transparency
+AI must operate reliably and safely under normal and unexpected conditions.
 
-AI systems should be understandable. Users should be made fully aware of the purpose of the system, how it works, and what limitations may be expected.
+## Privacy and Security
 
-### Accountability
+AI systems must ensure the privacy and security of data throughout development and deployment.
 
-People should be accountable for AI systems. Designers and developers of AI-based solutions should work within a framework of governance and organizational principles that ensure the solution meets ethical and legal standards that are clearly defined.
+## Inclusiveness
 
-# AI In Azure
+AI should benefit all individuals, regardless of background or ability.
 
-Azure AI services – a portfolio of AI services that can be incorporated into applications quickly and easily without specialist knowledge. Azure AI services is also the name for the multi-service resource created in the Azure portal that provides access to several different Azure AI services with a single key and endpoint. By endpoint we mean the location of a resource, such as an Azure AI service. We have 2 types of resources based on our needs and billing.
+## Transparency
 
-1. Multi-service resource – the AI service resource created in the Azure portal that provides access to a bundle of AI services.
-2. Single-service resource – a resource created in the Azure portal that provides access to a single Azure AI service, such as Speech, Vision, Language, etc. Each Azure AI service has a unique key and endpoint.
+AI systems should be understandable. Users must know the system's purpose, functionality, and limitations.
+
+## Accountability
+
+AI developers must ensure solutions meet ethical and legal standards.
+
+---
+
+# AI in Azure
+
+Azure AI Services offer prebuilt capabilities that are easy to integrate into applications. Resources include:
+
+- **Multi-service Resource**: A bundle of AI services accessible via a single endpoint.
+- **Single-service Resource**: A resource for one specific AI service (e.g., Speech, Vision).
+
+---
 
 # Common Machine Learning Types
 
 ## Regression
 
-It is a type of supervised learning method. The ability to predict outcome variables give 1 or more inputs. In this type the result is numeric(price,amount,size).
-It is generally finding relations between variables.
+Supervised learning that predicts numeric outcomes (e.g., price, size). It identifies relationships between variables.
 
 ## Classification
 
-It is a type of supervised learning method. The goal is to predict a discrete label or category for a given input based on its features. The task is to map input data to one of several predefined classes.
+Supervised learning that predicts categorical labels. Types include:
 
 ### Binary Classification
 
-Binary classification algorithms are used to train a model that predicts one of two possible labels for a single class. Essentially, predicting true or false. In most real scenarios, the data observations used to train and validate the model consist of multiple feature (x) values and a y value that is either 1 or 0.
+Predicts one of two outcomes (e.g., true/false). Performance is measured using:
 
-#### Performance Measure
+- **Accuracy**: `(TP + TN) / (TP + TN + FP + FN)`
+- **Recall**: `TP / (TP + FN)`
+- **Precision**: `TP / (TP + FP)`
 
-The first step in calculating evaluation metrics for a binary classification model is usually to create a matrix of the number of correct and incorrect predictions for each possible class label
-ŷ=0 and y=0: True negatives (Model correctly predicts negative when actual is negative.)
-ŷ=1 and y=0: False positives (Model incorrectly predicts positive when actual is negative.)
-ŷ=0 and y=1: False negatives (Model incorrectly predicts negative when actual is positive.)
-ŷ=1 and y=1: True positives (Model incorrectly predicts negative when actual is positive.)
-![Confusion Matrix](./img/cm.png)
+### Multiclass Classification
 
-##### Accuracy
-
-The simplest metric you can calculate from the confusion matrix is accuracy - the proportion of predictions that the model got right. Accuracy is calculated as:
-
-(TN+TP) ÷ (TN+FN+FP+TP)
-
-##### Recall
-
-Recall is a metric that measures the proportion of positive cases that the model identified correctly. In other words, compared to the number of patients who have diabetes, how many did the model predict to have diabetes?
-
-The formula for recall is:
-
-TP ÷ (TP+FN)
-
-##### Precision
-
-Precision is a similar metric to recall, but measures the proportion of predicted positive cases where the true label is actually positive. In other words, what proportion of the patients predicted by the model to have diabetes actually have diabetes?
-The formula for precision is:
-
-TP ÷ (TP+FP)
-
-### Multiclass classification
-
-Multiclass classification is used to predict to which of multiple possible classes an observation belongs. As a supervised machine learning technique, it follows the same iterative train, validate, and evaluate process as regression and binary classification in which a subset of the training data is held back to validate the trained model.
+Classifies observations into one of multiple categories.
 
 ## Clustering
 
-This is a type of unsupervised learning methods. In this we donot have any kinds of labelled data. The model is trained to find underlying relations between the input items and group them into clusters based on these relations.
+Unsupervised learning that groups data based on similarities. Used when no labels are provided.
+
+---
 
 # Deep Learning
 
-Deep learning is a sub set of machine learning in which neural networks with layered structures are used for decision making. In these we mainly used large amounts of data. This is how an ML algorithm can perform complex tasks such as image recognition, speech processing etc. It does so by using a hierarchy of neural networks, each iteration getting more complex and understanding the problem at deeper level.
+A subset of machine learning using layered neural networks to handle complex tasks. Deep learning enables:
 
-# Core Machine Learning Concepts
+- Image recognition
+- Speech processing
+- Natural language understanding
 
-## Training The Model
+### CNNs (Convolutional Neural Networks)
 
-Generally we donot use all the data for training, but we split the data into 2 groups i.e training data and validation/test data.
-It is recommended to split the data randomly i.e all the key elements are equally distributed in both datasets.  
-After traning the ML algorithm on test data we must validate the testing using the test data and see how close/far are the outputs to the expected outputs. We can do this by using some mathematical calculations like Mean Square Methods in this we take the difference between the predicted output and actual output we determine the accuracy of the ML algorithm.
+CNNs use filters to extract feature maps and learn image representations. Filter weights are optimized during training.
 
-# Computer Vision
+### Multi-modal Models
 
-Computer vision is one of the core areas of artificial intelligence (AI), and focuses on creating solutions that enable AI applications to "see" the world and make sense of it.
+Combine image and text inputs (e.g., Microsoft's Florence model). Train with large volumes of captioned images for broad applications.
 
-## Image Processing
+---
 
-To a computer, an image is an array of numeric pixel values.The ability to use filters to apply effects to images is useful in image processing tasks, such as you might perform with image editing software.
+# Azure AI Vision
 
-### Convolutional neural networks (CNNs)
+Azure AI Vision offers prebuilt and customizable vision models based on the Florence foundation model. Use cases include:
 
-One of the most common machine learning model architectures for computer vision is a convolutional neural network (CNN), a type of deep learning architecture. CNNs use filters to extract numeric feature maps from images, and then feed the feature values into a deep learning model to generate a label prediction.
-During the training process for a CNN, filter kernels(Filter kernels are small, trainable matrices that slide over the input image or over the output of the previous layer during the convolution operationEach kernel extracts a specific kind of feature from the input, such as edges, corners, textures, or more abstract patterns deeper in the network) are initially defined using randomly generated weight values. Then, as the training process progresses, the models predictions are evaluated against known label values, and the filter weights are adjusted to improve accuracy.
+- **Image Classification**
+- **Object Detection**
+- **Semantic Segmentation**
+- **OCR (Optical Character Recognition)**
 
-### Multi-modal models
+## Azure Vision Resources
 
-The success of transformers as a way to build language models has led AI researchers to consider whether the same approach would be effective for image data. The result is the development of multi-modal models, in which the model is trained using a large volume of captioned images, with no fixed labels. An image encoder extracts features from images based on pixel values and combines them with text embeddings created by a language encoder. The overall model encapsulates relationships between natural language token embeddings and image features
-![Multi-modal models](./img/3.png)  
-The Microsoft Florence model is just such a model. Trained with huge volumes of captioned images from the Internet, it includes both a language encoder and an image encoder. Florence is an example of a foundation model. In other words, a pre-trained general model on which you can build multiple adaptive models for specialist tasks
+1. **Azure AI Vision**: For dedicated vision use cases.
+2. **Azure AI Services**: For multi-service use including vision, language, etc.
 
-## Azure AI Vision
+## Face Analysis
 
-Microsoft's Azure AI Vision service provides prebuilt and customizable computer vision models that are based on the Florence foundation model and provide various powerful capabilities. With Azure AI Vision, you can create sophisticated computer vision solutions quickly and easily; taking advantage of "off-the-shelf" functionality for many common computer vision scenarios, while retaining the ability to create custom models using your own images.  
-To use the Azure AI vision we need to create a resource for it in our subscription. We can use 2 types i.e
+Detects and analyzes facial features. Services include:
 
-1. Azure AI Vision: A specific resource for the Azure AI Vision service. Use this resource type if you don't intend to use any other Azure AI services, or if you want to track utilization and costs for your Azure AI Vision resource separately.
-2. Azure AI services: A general resource that includes Azure AI Vision along with many other Azure AI services; such as Azure AI Language, Azure AI Custom Vision, Azure AI Translator, and others. Use this resource type if you plan to use multiple AI services and want to simplify administration and development.
+1. **Azure AI Vision** – Face detection and bounding boxes.
+2. **Azure AI Video Indexer** – Detects faces in video.
+3. **Azure AI Face** – Detects, recognizes, and analyzes faces.
 
-### Understand facial analysis
-
-Face detection involves identifying regions of an image that contain a human face, typically by returning bounding box coordinates that form a rectangle around the face. With Face analysis, facial features can be used to train machine learning models to return other information, such as facial features such as nose, eyes, eyebrows, lips, and others. A further application of facial analysis is to train a machine learning model to identify known individuals from their facial features. This is known as facial recognition, and uses multiple images of an individual to train the model. This trains the model so that it can detect those individuals in new images on which it wasn't trained.  
-Microsoft Azure provides multiple Azure AI services that you can use to detect and analyze faces, including:
-
-1. Azure AI Vision, which offers face detection and some basic face analysis, such as returning the bounding box coordinates around an image.
-2. Azure AI Video Indexer, which you can use to detect and identify faces in a video.
-3. Azure AI Face, which offers pre-built algorithms that can detect, recognize, and analyze faces.
+---
 
 # Azure Machine Learning
 
-Azure machine learning is a cloud based service that helps simplify some of the tasks and reduce the time it takes to prepare data, train the model
-and deploy a predictive service
+A cloud-based service for building, training, and deploying ML models.
 
-## Auto ML
+## AutoML
 
-AutoML is a cloud-based service that automates the machine learning process, allowing users to build, train, and deploy models without coding expertise.
-It streamlines tasks like data preprocessing, model selection, hyperparameter tuning, and evaluation. AutoML automatically chooses the best algorithm, optimizes parameters, and generates performance metrics. It supports tasks such as classification, regression, and time series forecasting.
-AutoML enables users to quickly integrate machine learning models into applications, making it accessible for non-technical users while still offering customization for advanced users.
+Automates data preprocessing, model selection, and hyperparameter tuning.
 
 ## Azure ML Designer
 
-Azure Machine Learning Designer is a drag-and-drop interface within the Azure Machine Learning service that allows users to build, train, and deploy machine learning models without writing code. It provides a visual environment where users can create end-to-end machine learning pipelines by connecting various pre-built
-components like data inputs, data transformations, models, and evaluation metrics.
+Drag-and-drop interface to create end-to-end ML workflows without coding.
 
-# Computer Vision
+---
 
-One of the primary applications of computer vision in Azure is image classification, where the system is fed images and classifies them into predefined categories. Another widely used application is object detection, which allows the identification and classification of multiple objects within an image.
-Semantic segmentation is another important application of computer vision, where the system classifies each pixel in an image into a specific category or label. Unlike object detection, which focuses on identifying and classifying objects, semantic segmentation provides a more detailed understanding by segmenting the entire image into regions that correspond to different classes, such as roads, buildings, or trees. This technique is especially useful in tasks like autonomous driving and medical image analysis.
-Optical Character Recognition (OCR) is a key application of computer vision that enables the extraction of text from images or scanned documents. OCR analyzes the structure of the document, detects characters, and converts them into machine-readable text.
+# Natural Language Processing in Azure
 
-### Azure AI Video Indexer
+Azure offers multiple NLP services under Azure AI Language, including:
 
-Azure AI Video Indexer is a cloud-based service provided by Microsoft Azure that uses artificial intelligence (AI) and machine learning (ML) to extract rich, actionable insights from video and audio content.
-![Azure AI Video Indexer](./img/model-chart.png)
-
-# Natural Language Processing
-
-Natural Language Processing (NLP) is a branch of artificial intelligence that focuses on enabling computers to understand, interpret, and generate human language. It involves tasks like speech recognition, text analysis, sentiment analysis, machine translation, and chatbot creation, helping bridge communication between humans and machines.
-
-Azure AI Language is a part of the Azure AI services offerings that can perform advanced natural language processing over unstructured text. Azure AI Language's text analysis features include:
-
-1. Named entity recognition identifies people, places, events, and more. This feature can also be customized to extract custom categories.
-2. Entity linking identifies known entities together with a link to Wikipedia.
-3. Personal identifying information (PII) detection identifies personally sensitive information, including personal health information (PHI).
-4. Language detection identifies the language of the text and returns a language code such as "en" for English.
-5. Sentiment analysis and opinion mining identifies whether text is positive or negative.
-6. Summarization summarizes text by identifying the most important information.
-7. Key phrase extraction lists the main concepts from unstructured text.
+- **Sentiment Analysis**
+- **Key Phrase Extraction**
+- **Named Entity Recognition (NER)**
+- **Language Detection**
+- **Summarization**
+- **PII Detection**
 
 ## Common NLP Workloads
 
-### Key Phrase Extraction
+- **Key Phrase Extraction**: Identifies key topics.
+- **Entity Recognition**: Detects objects, locations, dates in text.
+- **Sentiment Analysis**: Assesses sentiment scores from 0 to 1.
 
-The main purpose of this is to identify and extract the important infomartion from documents. This is generally used to decide the context of the text provided.
-
-### Entity Recognition
-
-Identifies entities of a document that can be categorized into types and sub types.  
-Eg:- "My car and bike are in the garage earlier today". The entites that maybe found are:-  
-Car, Bike - Objects  
-Garage - Location  
-Earlier Today - Date
-
-### Sentiment Analysis
-
-This is a prebuilt ML model used to identify the overall sentiment of the provided text. It provides a score between 0 to 1, generally higher the score the more positve the sentiment.
-
-## NLP in Azure
-
-Azure provides several tools and services for Natural Language Processing (NLP), offering a wide range of capabilities for text analysis, language understanding, sentiment analysis, translation, and more.
+## NLP Services
 
 ### Text Analytics
 
-The Text Analytics service in Azure Cognitive Services provides a range of NLP capabilities, including:  
- Sentiment Analysis: Analyzes text to determine if the sentiment is positive, negative, or neutral. It can also assess the intensity of sentiment in the text.  
- Key Phrase Extraction: Identifies important phrases in the text that represent the main topics or concepts.  
- Language Detection: Automatically detects the language of the input text, useful when working with multilingual content.  
- Named Entity Recognition (NER): Identifies entities in text, such as people, organizations, locations, dates, and more.
+- Sentiment Analysis
+- Key Phrase Extraction
+- Language Detection
+- Named Entity Recognition
 
 ### Language Understanding (LUIS)
 
-Language Understanding (LUIS) helps developers create natural language models that understand user intents and entities in conversational apps (e.g., chatbots, virtual assistants). LUIS is great for building custom language models.
+Builds custom natural language models to interpret intents and entities.
 
 ### Translator
 
-Azure's Translator service is an NLP solution that supports real-time text translation between over 70 languages.  
-Text Translation: Translate text between various languages.  
-Transliteration: Convert text from one writing system to another (e.g., from Latin script to Cyrillic).  
-Language Detection: Automatically detects the language of the input text.
+- Real-time translation between 70+ languages.
+- Transliteration and language detection.
 
-### Speech-to-Text and Text-to-Speech
+### Speech Services
 
-These services convert spoken language into text and vice versa. They are often used for voice-based applications, transcription, and real-time speech translation.  
-Speech-to-Text: Converts audio files or real-time spoken language into text.  
-Text-to-Speech: Converts text into spoken language using natural-sounding voices.  
-Speaker Recognition: Identifies different speakers in an audio stream.
+- **Speech-to-Text**: Converts spoken language to text.
+- **Text-to-Speech**: Converts text to speech.
+- **Speaker Recognition**: Identifies different speakers.
 
-### Conversational language understanding
+## Conversational Language Understanding (CLU)
 
-To work with conversational language understanding (CLU), you need to take into account three core concepts: utterances, entities, and intents
+Three key concepts:
 
-#### Utterances
+- **Utterances**: What users say.
+- **Entities**: Items referred to in speech.
+- **Intents**: User’s goal.
 
-An utterance is an example of something a user might say, and which your application must interpret.
+Azure Resources for CLU:
 
-#### Entity
+1. **Azure AI Language**: Authoring and prediction.
+2. **Azure AI Services**: For predictions only.
 
-An entity is an item to which an utterance refers
-
-#### Intents
-
-An intent represents the purpose, or goal, expressed in a user's utterance.
+---
