@@ -15,3 +15,7 @@ The parameters padded to the read_csv function are very important, as they prope
 2. delimiter='\t' → Reads tab-separated files (TSV). Uses a tab (\t) as the separator instead of a comma.
 3. na_values="n/a" → Automatically converts "n/a" into NaN.
 4. encoding='latin1' → Supports special characters.
+
+Features are the columns with which we predict the dependent variable.
+
+We should not perform feature scaling before the train test split because if we do that then the model can identify the test set that we are securing from training, which should not happen. In simple terms data lekage of test set will happen.
